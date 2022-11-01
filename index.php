@@ -36,6 +36,7 @@
                 break;
             case 'elements':
                 include 'view/elements.php';
+                include 'view'; //
                 break;
             case 'sanphamct':
                 if (isset($_GET['idsp'])&&($_GET['idsp']>0)){
