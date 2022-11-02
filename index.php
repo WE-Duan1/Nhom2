@@ -33,6 +33,7 @@
                 break;
             case 'contact':
                 include 'view/contact.php';
+                include 'view/.php';
                 break;
             case 'elements':
                 include 'view/elements.php';
