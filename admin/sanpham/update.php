@@ -15,7 +15,7 @@
 	<!-- End banner Area -->
         <div class="row-form">
             <div class="row-title text-center" style="margin-top:20px;">
-                <h3>Cập nhập sản phẩm</h3>
+                <h3>Product Updates</h3>
             </div>
             <div class="container">
                 <?php 
@@ -33,7 +33,7 @@
                 <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <select name="iddm" id="" class="form-select form-select-lg mb-3" aria-label=".form-select-sm example">
-                            <option selected value="0">Chọn danh mục</option>
+                            <option selected value="0">Select Category</option>
                             <?php 
                                 foreach ($listdanhmuc as $danhmuc) {
                                     extract($danhmuc);
@@ -44,20 +44,20 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Tên sản phẩm</label>
+                        <label for="pwd">Name</label>
                         <input type="text" name="tensp" id="" class=" form-control" value="<?php echo $sanpham[0]['name']?>">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Giá</label>
+                        <label for="pwd">Price</label>
                         <input type="text" name="giasp" id="" class=" form-control" value="<?php echo $sanpham[0]['price']?>">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Hình</label><br>
+                        <label for="pwd">Image</label><br>
                         <input type="file" name="hinh" id="" class="" value="">
                         <?php echo $sanpham[0]['img']?>
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Mô tả</label>
+                        <label for="pwd">Describe</label>
                         <textarea name="mota" id="" cols="30" rows="10" class=" form-control" value=""><?php echo $sanpham[0]['mota']?></textarea>
                     </div>
                     <div class="d-flex justify-content-center">
