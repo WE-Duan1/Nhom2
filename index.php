@@ -18,7 +18,6 @@
         switch ($act) {
             case 'blog':
                 include 'view/blog.php';
-                //test
                 break;
             case 'cart':
                 include 'view/cart.php';
