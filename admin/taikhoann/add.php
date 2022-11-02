@@ -17,7 +17,7 @@
 	<!--================Login Box Area =================-->
     <div class="col d-flex justify-content-center">
 					<div class="login_form_inner" style="width:60%;">
-						<h3>Thêm tài khoản mới</h3>
+						<h3>Creat account</h3>
 						<form class="row login_form" action="index.php?act=addtk" method="post" id="contactForm" novalidate="novalidate">
 							<div class="col-md-12 form-group">
 								<input type="email" class="form-control" id="name" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
@@ -44,7 +44,7 @@
 								</div>
 								<div class="creat_account" style="margin-left:40px;">
 									<input type="radio" name="role" value="0" checked>
-									<label for="f-option2">Khách hàng</label>
+									<label for="f-option2">Customer</label>
 								</div>
 							</div>
 							<!--  -->
