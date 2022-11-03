@@ -15,7 +15,7 @@
 	<!-- End banner Area -->
 <div class="container-fluid">
     <div class="row-title text-center" style="margin-top:20px;">
-        <h3>Danh sách sản phẩm</h3>
+        <h3>List Of Products</h3>
     </div>
     <div class="table-responsive-sm">
         <div class="d-flex ">
@@ -25,7 +25,7 @@
         </div>
         <form action="index.php?act=listsp" method="post">
             <select name="iddm" id="" class="form-select form-select-lg mb-3" aria-label=".form-select-sm example">
-                <option selected value="0">Chọn danh mục</option>
+                <option selected value="0">Select Category</option>
                 <?php 
                     foreach ($listdanhmuc as $danhmuc) {
                         extract($danhmuc);
@@ -42,13 +42,13 @@
             <thead class="thead-light">
                 <tr>
                     <th></th>
-                    <th>Mã loại</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Hình</th>
-                    <th>Giá</th>
-                    <th>Mô tả</th>
-                    <th>Lượt xem</th>
-                    <th>Thiết lập</th>
+                    <th>Code</th>
+                    <th>Name Product</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Describe</th>
+                    <th>View</th>
+                    <th>Setting</th>
                 </tr>
             </thead>
             <?php
@@ -74,7 +74,7 @@
                             <td>'.$price.'</td>
                             <td>'.$mota.'</td>
                             <td>'.$luotxem.'</td>
-                            <td class="text-center"><a href="'.$suasp.'"><input type="button" value="Sửa" style="width:120px; margin:5px; border:none;" ></a> <a href="'.$xoasp.'"><input type="button" value="Xóa" style="width:120px;margin:5px; border:none;"></a></td>
+                            <td class="text-center"><a href="'.$suasp.'"><input type="button" value="repair" style="width:120px; margin:5px; border:none;" ></a> <a href="'.$xoasp.'"><input type="button" value="Delete" style="width:120px;margin:5px; border:none;"></a></td>
                         </tr>
                     </tbody>';
                 }
