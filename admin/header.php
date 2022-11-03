@@ -59,9 +59,14 @@
 							<li class="nav-item"><a class="nav-link" href="index.php?act=binhluan">Comment</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php?act=addtt">News</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php?act=thongke">Statistical</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php?act=thoat" >Exit</a></li>
+							<!-- <li class="nav-item"><a class="nav-link" href="#" ><i class="fa-solid fa-magnifying-glass"></i></a></li> -->
+							<!-- <li class="nav-item">
+								<button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
+							</li> -->
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><a href="index.php?act=thoat" class="cart"><span>Exit</span></a></li>
+							<!-- <li class="nav-item"><a href="index.php?act=thoat" class="cart"><span>Exit</span></a></li> -->
 							<li class="nav-item">
 								<button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
 							</li>
