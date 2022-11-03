@@ -15,7 +15,7 @@
 	<!-- End banner Area -->
         <div class="row-form">
             <div class="row-title text-center" style="margin-top:20px;">
-                <h3>Thêm mới tin tức</h3>
+                <h3>Add New Blog</h3>
             </div>
             <div class="container">
                 <form action="index.php?act=addtt" method="post" enctype="multipart/form-data"> 
