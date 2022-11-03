@@ -49,7 +49,7 @@
 							</div>
 							<!--  -->
 							<div class="col-md-12 form-group">
-								<input type="submit" value="Thêm mới" class="primary-btn" name="themtk"></input>
+								<input type="submit" value="Add new" class="primary-btn" name="themtk"></input>
 								<!-- <a href="#">Forgot Password?</a> -->
 							</div>
 						</form>

@@ -15,21 +15,21 @@
 	<!-- End banner Area -->
 <div class="container-fluid">
     <div class="row-title text-center" style="margin-top:20px;">
-        <h3>Thông tin tài khoản khách hàng</h3>
+        <h3>Customer Account Information</h3>
     </div>
     <div class="table-responsive-sm">
         <div class="d-flex ">
-            <input type="submit" value="Chọn tất cả" name="" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-            <a href="index.php?act=addtk"><input type="submit" value="Thêm mới" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
-            <input type="submit" value="Chỉnh sửa" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+            <input type="submit" value="Select All" name="" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+            <a href="index.php?act=addtk"><input type="submit" value="Add New" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+            <input type="submit" value="Edit" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
         </div>
         <table class="table table-bordered">
             <thead class="thead-light">
                 <tr>
                     <th></th>
-                    <th>Nội dung</th>
-                    <th>Ngày đăng</th>
-                    <th style="width:200px;">Thiết lập</th>
+                    <th>Content</th>
+                    <th>Date Submitted</th>
+                    <th style="width:200px;">Sitting</th>
                 </tr>
             </thead>
             <?php
@@ -44,7 +44,7 @@
                             <td><input type="checkbox" name="" id=""></td>
                             <td>'.$noi_dung.'</td>
                             <td>'.$ngay_bl.'</td>
-                            <td><a href="'.$suabl.'"><input type="button" value="Sửa" style="width:120px; margin:5px; border:none;" ></a> <a href="'.$xoabl.'"><input type="button" value="Xóa" style="width:120px;margin:5px; border:none;"></a></td>
+                            <td><a href="'.$suabl.'"><input type="button" value="Repair" style="width:120px; margin:5px; border:none;" ></a> <a href="'.$xoabl.'"><input type="button" value="Delete" style="width:120px;margin:5px; border:none;"></a></td>
                         </tr>
                     </tbody>';
                 }

@@ -15,14 +15,14 @@
 	<!-- End banner Area -->
         <div class="row-form">
             <div class="row-title text-center" style="margin-top:20px;">
-                <h3>Thêm mới sản phẩm</h3>
+                <h3>Add New Product</h3>
             </div>
             <div class="container">
                 <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="email">Danh mục</label> <br>
+                        <label for="email">Category</label> <br>
                         <select name="iddm" id="" class="form-select form-select-lg mb-3" aria-label=".form-select-sm example">
-                            <option selected>Chọn danh mục</option>
+                            <option selected>Choose Category</option>
                             <?php 
                                 foreach ($listdanhmuc as $danhmuc) {
                                     extract($danhmuc);
@@ -32,19 +32,19 @@
                         </select>
                     </div> <br><br>  
                     <div class="form-group">
-                        <label for="pwd">Tên sản phẩm</label>
+                        <label for="pwd">Product Name</label>
                         <input type="search" name="tensp" id="" class=" form-control">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Giá</label>
+                        <label for="pwd">Price</label>
                         <input type="text" name="giasp" id="" class=" form-control">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Hình</label> <br>
+                        <label for="pwd">Image</label> <br>
                         <input type="file" name="hinh" id="" class="">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Mô tả</label>
+                        <label for="pwd">Describe</label>
                         <textarea name="mota" id="" cols="30" rows="5" class=" form-control"></textarea>
                     </div>
                     <div class="d-flex justify-content-center">

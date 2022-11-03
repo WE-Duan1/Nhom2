@@ -15,22 +15,22 @@
 	<!-- End banner Area -->
         <div class="row-form">
             <div class="row-title text-center" style="margin-top:20px;">
-                <h3>Thêm mới loại hàng</h3>
+                <h3>Add New Category</h3>
             </div>
             <div class="container">
                 <form action="index.php?act=adddm" method="post">
                     <div class="form-group">
-                        <label for="email">Mã loại</label>
+                        <label for="email">Code</label>
                         <input type="text" name="maloai" id="" disabled class=" form-control"> 
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Tên loại</label>
+                        <label for="pwd">Name</label>
                         <input type="text" name="tenloai" id="" class=" form-control">
                     </div>
                     <div class="d-flex justify-content-center">
-                        <input type="submit" value="Thêm mới" name="themmoi" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-                        <input type="reset" value="Nhập lại" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-                        <a href="index.php?act=lisdm"><input type="button" value="Danh sách" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+                        <input type="submit" value="Add new" name="themmoi" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+                        <input type="reset" value="Retype" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+                        <a href="index.php?act=lisdm"><input type="button" value="List" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
                     </div>
                     <!-- <input type="submit" value="Thêm mới" name="themmoi" class="btn btn-default border-0 " style="margin-bottom:15px; width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
                     <input type="reset" value="Nhập lại" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">

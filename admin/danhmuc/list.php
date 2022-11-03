@@ -15,16 +15,16 @@
 	<!-- End banner Area -->
     <div class="container-fluid">
         <div class="row-title text-center" style="margin-top:20px;">
-            <h3>Danh sách loại hàng</h3>
+            <h3>List Category</h3>
         </div>
         <div class="table-responsive-sm">
             <table class="table table-bordered">
                 <thead class="thead-light">
                     <tr>
                         <th></th>
-                        <th style="width:360px;">Mã loại</th>
-                        <th style="width:360px;">Tên loại</th>
-                        <th style="width:360px;">Thiết lập</th>
+                        <th style="width:360px;">Code</th>
+                        <th style="width:360px;">Name</th>
+                        <th style="width:360px;">Sitting</th>
                     </tr>
                 </thead>
                 <?php
@@ -38,16 +38,16 @@
                                 <td><input type="checkbox" name="" id=""></td>
                                 <td>'.$ma_loai.'</td>
                                 <td>'.$ten_loai.'</td>
-                                <td><a href="'.$suadm.'"><input type="button" value="Sửa" ></a> <a href="'.$xoadm.'"><input type="button" value="Xóa"></a></td>
+                                <td><a href="'.$suadm.'"><input type="button" value="Edit" ></a> <a href="'.$xoadm.'"><input type="button" value="Xóa"></a></td>
                             </tr>
                         </tbody>';
                     }
                 ?>
             </table>
                 <div class="d-flex justify-content-center">
-                <input type="submit" value="Chọn tất cả" name="" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-                <a href="index.php?act=adddm"><input type="submit" value="Thêm mới" name="themmoi" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
-                <input type="submit" value="Chỉnh sửa" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+                <input type="submit" value="Select All" name="" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+                <a href="index.php?act=adddm"><input type="submit" value="Add New" name="themmoi" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+                <input type="submit" value="Edit" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
             </div>
         </div>
     </div>

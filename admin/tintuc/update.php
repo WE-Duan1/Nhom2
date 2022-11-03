@@ -15,7 +15,7 @@
 	<!-- End banner Area -->
         <div class="row-form">
             <div class="row-title text-center" style="margin-top:20px;">
-                <h3>Sửa bài đăng</h3>
+                <h3>Update Blog</h3>
             </div>
             <div class="container">
                 <?php 
@@ -26,16 +26,16 @@
                 ?>
                 <form action="index.php?act=updatett" method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="pwd">Tên bài viết</label>
+                        <label for="pwd">Name</label>
                         <input type="text" name="name" id="" class=" form-control" value="<?php echo $tintuc[0]['name']?>">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Hình</label><br>
+                        <label for="pwd">Image</label><br>
                         <input type="file" name="hinh" id="" class="" value="">
                         <?php echo $tintuc[0]['img']?>
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Mô tả</label>
+                        <label for="pwd">Describe</label>
                         <textarea name="mota" id="" cols="30" rows="10" class=" form-control" value=""><?php echo $tintuc[0]['mota']?></textarea>
                     </div>
                     <!-- <div class="form-group">
@@ -44,9 +44,9 @@
                     </div> -->
                     <div class="d-flex justify-content-center">
                         <input type="hidden" name="id" value="<?php echo $tintuc[0]['id']?>">
-                        <input type="submit" value="Cập nhập" name="capnhap" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-                        <a href="index.php?act=addtt"><input type="button" value="Thêm mới" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
-                        <a href="index.php?act=listtt"><input type="button" value="Danh sách" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+                        <input type="submit" value="Update" name="capnhap" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+                        <a href="index.php?act=addtt"><input type="button" value="Add new" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+                        <a href="index.php?act=listtt"><input type="button" value="List" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
                     </div>
                     <!-- <input type="submit" value="Thêm mới" name="themmoi" class="btn btn-default border-0 " style="margin-bottom:15px; width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
                     <input type="reset" value="Nhập lại" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">

@@ -15,7 +15,7 @@
 	<!-- End banner Area -->
 <div class="container">
     <div class="row-title text-center" style="margin-top:20px;">
-        <h3>Cập nhập tài khoản</h3>
+        <h3>Update User</h3>
     </div>
     <?php 
         if(isset($_GET['id'])){
@@ -63,7 +63,7 @@
         </div>
         <div class="d-flex justify-content-center">
             <input type="hidden" name="id" value="<?=$id?>">
-            <input type="submit" value="Cập nhập" name="capnhap" class="form-control" style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;margin-bottom:15px">
+            <input type="submit" value="Update" name="capnhap" class="form-control" style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;margin-bottom:15px">
         </div>
     </form>
     <?php }?>
