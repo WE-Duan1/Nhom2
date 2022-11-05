@@ -22,11 +22,7 @@
                     $name = $_POST['name'];
                     $hinh = $_FILES['hinh']['name'];
                     $mota = $_POST['mota'];
-                    $ngaydang = $_POST['ngaydang'];
-                    //định dạng ngày
-                    $ngaydang = strtotime($ngaydang);
-                    $ngaydang = date('d M, Y',$ngaydang);
-                    //
+                    $ngaydang = date(' d M, y');;
                     $target_dir = "../upload/";
                     $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
                     if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
@@ -56,11 +52,6 @@
                         $name = $_POST['name'];
                         $hinh = $_FILES['hinh']['name'];
                         $mota = $_POST['mota'];
-                        //định dạng ngày
-                        // $ngaydang = $_POST['ngaydang'];
-                        // $ngaydang = strtotime($ngaydang);
-                        // $ngaydang = date('d-M-Y',$ngaydang);
-                        //
                         $target_dir = "../upload/";
                         $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
                         if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {

@@ -20,7 +20,7 @@
     <div class="table-responsive-sm">
         <div class="d-flex ">
             <input type="submit" value="Select All" name="" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-            <a href="index.php?act=addtk"><input type="submit" value="Add new" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+            <a href="index.php?act=addtk"><input type="submit" value="Add New" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
             <input type="submit" value="Edit" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
         </div>
         <table class="table table-bordered">
@@ -34,7 +34,7 @@
                     <th>Address</th>
                     <th>Phone Number</th>
                     <th>Role</th>
-                    <th style="width:200px;">Sitting</th>
+                    <th style="width:200px;">Set Up</th>
                 </tr>
             </thead>
             <?php
