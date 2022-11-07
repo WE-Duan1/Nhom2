@@ -1058,19 +1058,19 @@
 		<div class="container">
 			<div class="row">
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/1.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/logo1.png" alt="">
 				</a>
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/2.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/logo-van.jpg" alt="">
 				</a>
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/3.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/PUMA-logo.jpg" alt="">
 				</a>
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/4.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/logo-con.jpg" alt="">
 				</a>
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/5.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/logo-a.jpg" alt="">
 				</a>
 			</div>
 		</div>
