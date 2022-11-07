@@ -24,7 +24,7 @@
                         <th></th>
                         <th style="width:360px;">Code</th>
                         <th style="width:360px;">Name</th>
-                        <th style="width:360px;">Sitting</th>
+                        <th style="width:360px;">Set Up</th>
                     </tr>
                 </thead>
                 <?php
@@ -38,7 +38,7 @@
                                 <td><input type="checkbox" name="" id=""></td>
                                 <td>'.$ma_loai.'</td>
                                 <td>'.$ten_loai.'</td>
-                                <td><a href="'.$suadm.'"><input type="button" value="Edit" ></a> <a href="'.$xoadm.'"><input type="button" value="Xóa"></a></td>
+                                <td><a href="'.$suadm.'"><input type="button" value="Edit" ></a> <a href="'.$xoadm.'"><input type="button" value="Delete"></a></td>
                             </tr>
                         </tbody>';
                     }

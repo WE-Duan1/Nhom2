@@ -6,7 +6,7 @@
 					<h1>Admin</h1>
 					<nav class="d-flex align-items-center">
 						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Product Type</a>
+						<a href="category.html">Blog</a>
 					</nav>
 				</div>
 			</div>
@@ -20,7 +20,7 @@
             <div class="container">
                 <form action="index.php?act=addtt" method="post" enctype="multipart/form-data"> 
                     <div class="form-group">
-                        <label for="pwd">Name </label>
+                        <label for="pwd">Name</label>
                         <input type="text" name="name" id="" class=" form-control">
                     </div>
                     <div class="form-group">
@@ -32,12 +32,12 @@
                         <textarea name="mota" id="" cols="30" rows="5" class=" form-control"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Date Submitted</label>
-                        <input type="date" name="ngaydang" id="" class=" form-control">
+                        <label for="pwd">Date</label>
+                        <input type="date" name="ngaydang" id="" class=" form-control" disabled>
                     </div>
                     <div class="d-flex justify-content-center">
                         <input type="submit" value="Add New" name="themmoi" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-                        <input type="reset" value="Retype" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+                        <input type="reset" value="Reset" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
                         <a href="index.php?act=listtt"><input type="button" value="List" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
                     </div>
                     <!-- <input type="submit" value="Thêm mới" name="themmoi" class="btn btn-default border-0 " style="margin-bottom:15px; width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">

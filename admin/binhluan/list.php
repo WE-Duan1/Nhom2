@@ -29,7 +29,7 @@
                     <th></th>
                     <th>Content</th>
                     <th>Date Submitted</th>
-                    <th style="width:200px;">Sitting</th>
+                    <th style="width:200px;">Set Up</th>
                 </tr>
             </thead>
             <?php
@@ -44,7 +44,7 @@
                             <td><input type="checkbox" name="" id=""></td>
                             <td>'.$noi_dung.'</td>
                             <td>'.$ngay_bl.'</td>
-                            <td><a href="'.$suabl.'"><input type="button" value="Repair" style="width:120px; margin:5px; border:none;" ></a> <a href="'.$xoabl.'"><input type="button" value="Delete" style="width:120px;margin:5px; border:none;"></a></td>
+                            <td style="text-align:center;"><a href="'.$suabl.'"><input type="button" value="Edit" style="width:120px; margin:5px; border:none;" ></a> <a href="'.$xoabl.'"><input type="button" value="Delete" style="width:120px;margin:5px; border:none;"></a></td>
                         </tr>
                     </tbody>';
                 }
