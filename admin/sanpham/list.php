@@ -20,11 +20,9 @@
     <div class="table-responsive-sm">
         <div class="d-flex ">
             <input type="submit" value="Select All" name="themmoi" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-<<<<<<< HEAD
-            <a href="index.php?act=addsp"><input type="submit" value="Add new" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
-=======
+
             <a href="index.php?act=addsp"><input type="submit" value="Add New" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
->>>>>>> ffc500ff8ade36c81c45acf3d20c02429e4e6d41
+
             <input type="submit" value="Edit" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
         </div>
         <form action="index.php?act=listsp" method="post">
