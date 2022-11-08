@@ -31,37 +31,16 @@
 				<div class="col-lg-6">
 					<div class="login_form_inner">
 						<h3>CREATE AN ACCOUNT</h3>
-						<!-- <form class="row login_form" action="index.php?act=signup" method="post" id="contactForm" novalidate="novalidate">
-							<div class="col-md-12 form-group">
-								<input type="email" class="form-control" id="name" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="user" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="password" class="form-control" id="name" name="pass" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="tel" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'">
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'">
-							</div>
-							<div class="col-md-12 form-group">
-								<div class="creat_account">
-									<input type="checkbox" id="f-option2" name="selector">
-									<label for="f-option2">I agree to the terms of use</label>
-								</div>
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="submit" value="Register" class="primary-btn" name="dangky"></input>
-							</div>
-						</form> -->
 						<form class="row login_form requires-validation" action="index.php?act=signup" method="post" id="contactForm" novalidate="novalidate" >
 							<div class="col-md-12 form-group">
 								<input type="email" class="form-control" id="name" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" required>
 								<!-- <div class="valid-feedback">Email field is valid!</div> -->
 								<div class="invalid-feedback">Email field cannot be blank!</div>
+							</div>
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="fullname" placeholder="Fullname" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fullname'" required>
+								<!-- <div class="valid-feedback">Username field is valid!</div> -->
+								<div class="invalid-feedback">Fullname field cannot be blank!</div>
 							</div>
 							<div class="col-md-12 form-group">
 								<input type="text" class="form-control" id="name" name="user" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" required>

@@ -18,25 +18,17 @@
         <h3>Update User</h3>
     </div>
     <?php 
-        if(isset($_GET['id'])){
-            $id = $_GET['id'];
-            $ttnd = geton_taikhoan($id);
-            // echo"<pre>";
-            // print_r($ttnd);
-            // echo"</pre>";
-            // if(isset($_POST['capnhap'])){
-            //     $user = $_POST['user'];
-            //     $pass = $_POST['pass'];
-            //     $address = $_POST['address'];
-            //     $tel = $_POST['tel'];
-            // }
-        // }
-        // else{
-        //     header('location: index.php');
-        // }
+        if(isset($_GET['ma_tk'])){
+            $ma_tk = $_GET['ma_tk'];
+            $ttnd = geton_taikhoan($ma_tk);
+            // var_dump($ttnd);
     ?>
     <form action="index.php?act=edittk" method="POST">
         <div class="form-row">
+            <div class="col form-group">
+                <label for="exampleInputEmail1">Fullname</label>
+                <input type="text" class="form-control" name="fullname" placeholder="" value="<?php echo $ttnd[0]['ho_ten']?>">
+            </div>
             <div class="col form-group">
                 <label for="exampleInputEmail1">Username</label>
                 <input type="text" class="form-control" name="user" placeholder="" value="<?php echo $ttnd[0]['user']?>">
@@ -62,7 +54,7 @@
             </div> -->
         </div>
         <div class="d-flex justify-content-center">
-            <input type="hidden" name="id" value="<?=$id?>">
+            <input type="hidden" name="ma_tk" value="<?=$ma_tk?>">
             <input type="submit" value="Update" name="capnhap" class="form-control" style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;margin-bottom:15px">
         </div>
     </form>

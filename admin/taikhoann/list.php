@@ -28,6 +28,7 @@
                 <tr>
                     <th></th>
                     <th>Code</th>
+                    <th>Fullname</th>
                     <th>User Name</th>
                     <th>Password</th>
                     <th>Email</th>
@@ -41,13 +42,14 @@
                 foreach ($listtaikhoan as $taikhoan) {
                     extract($taikhoan);
                     // $suatk="index.php?act=suatk&id=".$id;
-                    $xoatk="index.php?act=xoatk&id=".$id;
-                    $suatk="index.php?act=suatk&id=".$id;
+                    $xoatk="index.php?act=xoatk&ma_tk=".$ma_tk;
+                    $suatk="index.php?act=suatk&ma_tk=".$ma_tk;
                     echo '
                     <tbody>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>'.$id.'</td>
+                            <td>'.$ma_tk.'</td>
+                            <td>'.$ho_ten.'</td>
                             <td>'.$user.'</td>
                             <td>'.$pass.'</td>
                             <td>'.$email.'</td>

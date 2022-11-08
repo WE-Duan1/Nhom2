@@ -82,11 +82,12 @@
             case 'signup':
                 if(isset($_POST['dangky'])&&($_POST['dangky'])){
                     $email = $_POST['email'];
+                    $fullname = $_POST['fullname'];
                     $user = $_POST['user'];
                     $pass = $_POST['pass'];
                     $address = $_POST['address'];
                     $tel = $_POST['tel'];
-                    insert_taikhoan($email,$user,$pass,$address,$tel);
+                    insert_taikhoan($email,$fullname,$user,$pass,$address,$tel); 
                     $thongbao="Đăng ký thành công. Vui lòng <a href='index.php?act=login'>đăng nhập</a>";
                 }
                 include 'view/signup.php';

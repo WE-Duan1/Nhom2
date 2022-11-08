@@ -124,22 +124,23 @@
                 case 'addtk':
                     if(isset($_POST['themtk'])&&($_POST['themtk'])){
                         $email = $_POST['email'];
+                        $fullname = $_POST['fullname'];
                         $user = $_POST['user'];
                         $pass = $_POST['pass'];
                         $address = $_POST['address'];
                         $tel = $_POST['tel'];
                         $role = $_POST['role'];
-                        insert_taikhoan_admin($email,$user,$pass,$address,$tel,$role);
+                        insert_taikhoan_admin($email,$fullname,$user,$pass,$address,$tel,$role); 
                         $thongbao="Thêm tài khoản thành công - <a href='index.php?act=dskh'>Xem danh sách</a>";
                     }
                     include 'taikhoann/add.php';
                     break;
                 case 'xoatk':
-                    if (isset($_GET['id'])&&($_GET['id']>0)) {
-                        $sql = "delete from tai_khoan where id=".$_GET['id'];
+                    if (isset($_GET['ma_tk'])&&($_GET['ma_tk']>0)) {
+                        $sql = "delete from tai_khoan where ma_tk=".$_GET['ma_tk'];
                         pdo_execute($sql);
                     }
-                    $sql = "select * from tai_khoan order by id desc";
+                    $sql = "select * from tai_khoan order by ma_tk desc";
                     $listtaikhoan= pdo_query($sql);
                     include "taikhoann/list.php";
                     break; 
@@ -148,27 +149,28 @@
                     include "taikhoann/list.php";
                     break;
                 case 'suatk':
-                    if(isset($_GET['ma_loai'])&&($_GET['ma_loai'])){
+                    if(isset($_GET['ma_tk'])&&($_GET['ma_tk'])){
                         // $id=$_GET['id'];
-                        $sql = "SELECT * FROM loai WHERE ma_loai =".$_GET['ma_loai'];
+                        $sql = "SELECT * FROM tai_khoan WHERE ma_tk =".$_GET['ma_tk'];
                         $dm = pdo_query_one($sql);
                     }
                     include "taikhoann/edit.php";
                     break; 
                 case 'edittk': 
                     if(isset($_POST['capnhap'])&&($_POST['capnhap'])){
-                        $id = $_POST['id'];
+                        $ma_tk = $_POST['ma_tk'];
+                        $fullname = $_POST['fullname'];
                         $user = $_POST['user']; 
                         $pass = $_POST['pass'];
                         $address = $_POST['address'];
                         $tel = $_POST['tel'];
-                        update_taikhoan($id,$user,$pass,$address,$tel);
+                        update_taikhoan($ma_tk,$fullname,$user,$pass,$address,$tel); 
                         // // $listtaikhoan=getall_taikhoan(); 
                         // $_SESSION['user'] = checkuser($user,$pass);
                         // header('location: index.php?act=edittk');
                         // $thongbao="Thêm tài khoản thành công - <a href='index.php?act=dskh'>Xem danh sách</a>";
                     }
-                    $sql = "select * from tai_khoan order by id desc";
+                    $sql = "select * from tai_khoan order by ma_tk desc";
                     $listtaikhoan= pdo_query($sql);
                     include "taikhoann/list.php";
                     break; 
