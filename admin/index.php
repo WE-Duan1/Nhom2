@@ -103,9 +103,6 @@
                         // $id=$_GET['id'];
                         $sql = "SELECT * FROM loai WHERE ma_loai =".$_GET['ma_loai'];
                         $dm = pdo_query_one($sql);
-                        // //cần dsdm
-                        // $kq=getall_dm();
-                        // // include "danhmuc/update.php";
                     }
                     include "danhmuc/update.php";
                     break;
@@ -165,35 +162,24 @@
                         $address = $_POST['address'];
                         $tel = $_POST['tel'];
                         update_taikhoan($ma_tk,$fullname,$user,$pass,$address,$tel); 
-                        // // $listtaikhoan=getall_taikhoan(); 
-                        // $_SESSION['user'] = checkuser($user,$pass);
-                        // header('location: index.php?act=edittk');
-                        // $thongbao="Thêm tài khoản thành công - <a href='index.php?act=dskh'>Xem danh sách</a>";
                     }
                     $sql = "select * from tai_khoan order by ma_tk desc";
                     $listtaikhoan= pdo_query($sql);
                     include "taikhoann/list.php";
                     break; 
                 case 'thoat':
-                    // session_unset();
                     if(isset($_SESSION['role'])) unset($_SESSION['role']);
                     header('location: ../index.php');
                     break;
                 case 'thongke':
-                    // $sql = "select * from loai order by ten_loai desc";
-                    // $listdanhmuc= pdo_query($sql);
                     $listtk=loadall_thongke();
                     include "thongke/list.php";
                     break;
                 case 'binhluan':
-                    // $sql = "select * from loai order by ten_loai desc";
-                    // $listdanhmuc= pdo_query($sql);
                     $listbl=loadall_binhluan_admin();
                     include "binhluan/list.php";
                     break;
                 case 'xoabl':
-                    // $sql = "select * from loai order by ten_loai desc";
-                    // $listdanhmuc= pdo_query($sql);
                     if (isset($_GET['id'])&&($_GET['id']>0)) {
                         delete_binhluan($_GET['id']);
                     }
