@@ -132,6 +132,11 @@
                     }
                     include 'taikhoann/add.php';
                     break;
+                case 'tklist':
+                    $sql = "select * from tai_khoan order by ma_tk desc";
+                    $listtaikhoan= pdo_query($sql);
+                    include "taikhoann/list.php";
+                    break;
                 case 'xoatk':
                     if (isset($_GET['ma_tk'])&&($_GET['ma_tk']>0)) {
                         $sql = "delete from tai_khoan where ma_tk=".$_GET['ma_tk'];

@@ -37,7 +37,7 @@
 
       </div>
       <div class="text-center">
-        <button type="button" value="submit" class="btn btn-outline-warning primary-btn" style="height: 40px;line-height:40px;">Let's go !</button>
+        <a href="index.php?act=thongke"><button type="button" value="submit" class="btn btn-outline-warning primary-btn" style="height: 40px;line-height:40px;">Let's go !</button></a>
 			</div>
 
     </div>
@@ -66,7 +66,7 @@
 
       </div>
       <div class="text-center">
-        <button type="button" value="submit" class="btn btn-outline-warning primary-btn" style="height: 40px;line-height:40px;">Let's go !</button>
+        <a href="index.php?act=tklist"><button type="button" value="submit" class="btn btn-outline-warning primary-btn" style="height: 40px;line-height:40px;">Let's go !</button></a>
 			</div>
 
 
@@ -95,7 +95,7 @@
 
       </div>
       <div class="text-center">
-        <button type="button" value="submit" class="btn btn-outline-warning primary-btn" style="height: 40px;line-height:40px;">Let's go !</button>
+        <a href="index.php?act=binhluan"><button type="button" value="submit" class="btn btn-outline-warning primary-btn" style="height: 40px;line-height:40px;">Let's go !</button></a>
 			</div>
 
 
@@ -124,7 +124,7 @@
         <!-- <button type="button" class="btn btn-light-blue btn-md">Go to page</button> -->
       </div>
       <div class="text-center">
-					<button type="button" value="submit" class="btn btn-outline-warning primary-btn" style="height: 40px;line-height:40px;">Let's go !</button>
+					<a href="index.php?act=listsp"><button type="button" value="submit" class="btn btn-outline-warning primary-btn" style="height: 40px;line-height:40px;">Let's go !</button></a>
 			</div>
       <!--btn btn-outline-warning primary-btn -->
     </div>
