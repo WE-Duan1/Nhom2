@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Z-MOHN - Sport & Originals</title>
+	<title>Z-Mohn - Sport & Originals</title>
 	<!--
 		CSS
 		============================================= -->

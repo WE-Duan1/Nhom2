@@ -6,7 +6,7 @@
 					<h1>Admin</h1>
 					<nav class="d-flex align-items-center">
 						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Customer account</a>
+						<a href="category.html">Comments</a>
 					</nav>
 				</div>
 			</div>
@@ -15,7 +15,7 @@
 	<!-- End banner Area -->
 <div class="container-fluid">
     <div class="row-title text-center" style="margin-top:20px;">
-        <h3>Customer Account Information</h3>
+        <h3>Customer Comments</h3>
     </div>
     <div class="table-responsive-sm">
         <div class="d-flex ">

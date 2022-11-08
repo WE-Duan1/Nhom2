@@ -6,7 +6,7 @@
 					<h1>Admin</h1>
 					<nav class="d-flex align-items-center">
 						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Blog</a>
+						<a href="category.html">Add New Blog</a>
 					</nav>
 				</div>
 			</div>

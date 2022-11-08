@@ -6,7 +6,7 @@
 					<h1>Admin</h1>
 					<nav class="d-flex align-items-center">
 						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Comment</a>
+						<a href="category.html">Comments</a>
 					</nav>
 				</div>
 			</div>
