@@ -77,7 +77,11 @@
                     <div class="butt1"><p>41</p></div>
                     <div class="butt1"><p>42</p></div>
                 
-                <div class="butt"><button>- 1 +</button></div>
+                <div class="butt">
+                    <button id="btn-plus"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" value="1" class="amount">
+                    <button id="btn-minus"><i class="fa-solid fa-plus"></i></button>
+                </div>
                 <button>Add to cart</button>
                 <div class="SKU">
                     <p>SKU: nike <br> Category: shoes, nike</p>
@@ -243,5 +247,14 @@
                     margin-left: 15px;
                     padding: 4px;
                 }
+                .butt #btn-plus, .butt #btn-minus{
+                    width: 35px;
+                    height: 35px;
+                }
+                .butt .amount{
+                    width: 60px;
+                    text-align: center;
+                }
+
             </style>
 </div>
