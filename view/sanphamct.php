@@ -29,7 +29,7 @@
                 // echo $id;
                 $ha="upload/".$sanpham[0]['img'];
                     if (is_file($ha)) {
-                    $hinh="<img src='".$ha."' height='30%' width='30%'>";
+                    $hinh="<img src='".$ha."' height='100%' width='100%'>";
                 }else{
                     $hinh="Không tìm thấy hình";
                 }
