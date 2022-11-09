@@ -49,7 +49,7 @@
         <p>col-md-2</p>
     </div> -->
     <div class="content1" >
-        <div class="article" width="100%"><?php echo '<div style="width=100%;height:100%;">"'.$hinh.'"</div>';?></div>
+        <div class="article" width="100%"><?php echo '<div style="width=80%;height:80%;">'.$hinh.'</div>';?></div>
         
     <div class="aside">
                 <div>
@@ -213,7 +213,7 @@
                 }
                 .aside .butt{
                     display: inline;
-                    margin-left: 130px;
+                    
                 }
                 .butt button{
                     letter-spacing: 17px;
