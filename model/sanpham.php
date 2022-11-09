@@ -35,11 +35,18 @@
         $listsanpham = pdo_query($sql);
         return $listsanpham;
     }
+    // demo
     function loadone_sanpham($id){
-        $sql = "SELECT * from hang_hoa WHERE id=".$id;
+        $sql = "SELECT * FROM hang_hoa hh join loai lh ON hh.iddm = lh.ma_loai WHERE hh.id = ".$id;
         $sanpham = pdo_query($sql);
         return $sanpham;
     }
+    // end
+    // function loadone_sanpham($id){
+    //     $sql = "SELECT * from hang_hoa WHERE id=".$id;
+    //     $sanpham = pdo_query($sql);
+    //     return $sanpham;
+    // }
     // function update_sanpham($id,$tensp,$giasp,$mota,$hinh,$iddm){
     function update_sanpham($id,$tensp,$giasp,$mota,$hinh){
         if($hinh!="")
