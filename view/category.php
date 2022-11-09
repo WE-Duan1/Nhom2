@@ -45,6 +45,7 @@
 
 					</ul>
 				</div>
+				<div class="sidebar-filter mt-50">
 					<div class="common-filter">
 						<div class="head">Price</div>
 						<div class="price-range-area">
