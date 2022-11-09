@@ -29,7 +29,7 @@
                 // echo $id;
                 $ha="upload/".$sanpham[0]['img'];
                     if (is_file($ha)) {
-                    $hinh="<img src='".$ha."' height='300' width='30%'>";
+                    $hinh="<img src='".$ha."' height='30%' width='30%'>";
                 }else{
                     $hinh="Không tìm thấy hình";
                 }
@@ -54,8 +54,8 @@
     <div class="aside">
                 <div>
                     <a href="#./view/home">Home /</a>
-                    <a href="#">PUMA / </a>
-                    <a href="#"><p class=""><?php echo $sanpham[0]['name']?></p><br></a>
+                   <!-- <a href="#">PUMA / </a> -->
+                    <a href="#"><?php echo $sanpham[0]['name']?><br></a>
                 </div>
                 <h2 class="mb-3 text-center"><?php echo $sanpham[0]['name']?></h2><br>
                 <div class="price">
