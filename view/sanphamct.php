@@ -84,7 +84,7 @@
                 </div>
                 <button>Add to cart</button>
                 <div class="SKU">
-                    <p>SKU: nike <br> Category: shoes, nike</p>
+                    <p>SKU: <?=$sanpham[0]['ten_loai'] ?> <br> Category: shoes, nike</p>
                 </div>
             </div >
         <!-- <a href="index.php?act=checkout"><input type="submit" value="Add to cart" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a> -->
