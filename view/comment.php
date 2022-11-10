@@ -33,7 +33,7 @@
               <div>
                 <h6 class="fw-bold text-primary mb-1">Lily Coleman</h6>
                 <p class="text-muted small mb-0">
-                  Shared publicly - 10/09/2020
+                  Shared publicly - 08 Nov, 22
                 </p>
               </div>
             </div>

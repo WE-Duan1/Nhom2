@@ -109,7 +109,7 @@
                         <p><i class="fa-solid fa-share-from-square"></i>&nbsp;</p><span> Cash on delivery, online payment with many methods</span>
                     </div>
                     <div class ="col-md-5 col-sm-6 text-center" style="word-break: break-all; margin-top: 20px;">
-                        <p><i class="fa-solid fa-headset"></i>&nbsp;</p><span> Call center: 1900,988.970 (7:30 - 22:00)</span>
+                        <p><i class="fa-solid fa-headset"></i>&nbsp;</p><span> Call center: 1900.679.679 (7:30 - 22:00)</span>
                     </div>
                 </div>
             </div>
