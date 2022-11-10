@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2022 at 03:08 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Generation Time: Nov 09, 2022 at 06:27 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,21 +29,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `binh_luan` (
   `id` int(11) NOT NULL,
-  `ma_hh` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `noi_dung` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `iduser` int(11) NOT NULL,
-  `idpro` int(10) NOT NULL,
-  `ngay_bl` varchar(30) COLLATE utf8_unicode_ci NOT NULL
+  `idpro` int(11) NOT NULL,
+  `ngay_bl` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `binh_luan`
---
-
-INSERT INTO `binh_luan` (`id`, `ma_hh`, `noi_dung`, `iduser`, `idpro`, `ngay_bl`) VALUES
-(32, '', 'sss', 0, 0, ' 24 Oct, 22'),
-(33, '', 'dd', 0, 0, ' 24 Oct, 22'),
-(34, '', 'đ', 0, 0, ' 08 Nov, 22');
 
 -- --------------------------------------------------------
 
@@ -53,12 +43,13 @@ INSERT INTO `binh_luan` (`id`, `ma_hh`, `noi_dung`, `iduser`, `idpro`, `ngay_bl`
 
 CREATE TABLE `chi_tiet_don_hang` (
   `ma_ctdh` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `ma_dh` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `ma_hh` int(10) NOT NULL,
+  `ma_dh` int(10) NOT NULL,
+  `ma_hh` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `price` double(10,2) NOT NULL,
-  `quantity` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+  `size` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -70,14 +61,14 @@ CREATE TABLE `chi_tiet_don_hang` (
 CREATE TABLE `don_hang` (
   `ma_dh` int(10) NOT NULL,
   `ma_tk` int(10) NOT NULL,
-  `ngay_dat` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `ngay_dat` date NOT NULL,
   `nguoi_nhan` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sdt_nhan` text COLLATE utf8_unicode_ci NOT NULL,
+  `sdt_nhan` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `dia_chi_nhan` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `payment` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `trang_thai` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `ghi_chu_kh` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `ghi_chu_ad` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+  `payment` tinyint(1) NOT NULL,
+  `trang_thai` tinyint(1) NOT NULL,
+  `ghi_chu_kh` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ghi_chu_ad` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -179,20 +170,30 @@ CREATE TABLE `tin_tuc` (
 -- Indexes for table `binh_luan`
 --
 ALTER TABLE `binh_luan`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_bl_hh` (`idpro`);
+
+--
+-- Indexes for table `chi_tiet_don_hang`
+--
+ALTER TABLE `chi_tiet_don_hang`
+  ADD PRIMARY KEY (`ma_ctdh`),
+  ADD KEY `fk_ctdh_dh` (`ma_dh`),
+  ADD KEY `fk_ctdh_hh` (`ma_hh`);
 
 --
 -- Indexes for table `don_hang`
 --
 ALTER TABLE `don_hang`
-  ADD PRIMARY KEY (`ma_dh`);
+  ADD PRIMARY KEY (`ma_dh`),
+  ADD KEY `fk_dh_tk` (`ma_tk`);
 
 --
 -- Indexes for table `hang_hoa`
 --
 ALTER TABLE `hang_hoa`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `lk_sanpham_danhmuc` (`iddm`);
+  ADD KEY `fk_hh_lh` (`iddm`);
 
 --
 -- Indexes for table `loai`
@@ -220,31 +221,31 @@ ALTER TABLE `tin_tuc`
 -- AUTO_INCREMENT for table `binh_luan`
 --
 ALTER TABLE `binh_luan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `don_hang`
 --
 ALTER TABLE `don_hang`
-  MODIFY `ma_dh` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `ma_dh` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `hang_hoa`
 --
 ALTER TABLE `hang_hoa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
 
 --
 -- AUTO_INCREMENT for table `loai`
 --
 ALTER TABLE `loai`
-  MODIFY `ma_loai` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Mã loại hàng', AUTO_INCREMENT=40;
+  MODIFY `ma_loai` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Mã loại hàng', AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `tai_khoan`
 --
 ALTER TABLE `tai_khoan`
-  MODIFY `ma_tk` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
+  MODIFY `ma_tk` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1952;
 
 --
 -- AUTO_INCREMENT for table `tin_tuc`
@@ -257,10 +258,29 @@ ALTER TABLE `tin_tuc`
 --
 
 --
+-- Constraints for table `binh_luan`
+--
+ALTER TABLE `binh_luan`
+  ADD CONSTRAINT `fk_bl_hh` FOREIGN KEY (`idpro`) REFERENCES `hang_hoa` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `chi_tiet_don_hang`
+--
+ALTER TABLE `chi_tiet_don_hang`
+  ADD CONSTRAINT `fk_ctdh_dh` FOREIGN KEY (`ma_dh`) REFERENCES `don_hang` (`ma_dh`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_ctdh_hh` FOREIGN KEY (`ma_hh`) REFERENCES `hang_hoa` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `don_hang`
+--
+ALTER TABLE `don_hang`
+  ADD CONSTRAINT `fk_dh_tk` FOREIGN KEY (`ma_tk`) REFERENCES `tai_khoan` (`ma_tk`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Constraints for table `hang_hoa`
 --
 ALTER TABLE `hang_hoa`
-  ADD CONSTRAINT `lk_sanpham_danhmuc` FOREIGN KEY (`iddm`) REFERENCES `loai` (`ma_loai`);
+  ADD CONSTRAINT `fk_hh_lh` FOREIGN KEY (`iddm`) REFERENCES `loai` (`ma_loai`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
