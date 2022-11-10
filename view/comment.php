@@ -103,8 +103,8 @@
                
                 <form action="<?=$_SERVER['PHP_SELF'];?>" method="post">
                     <input type="hidden" name="idpro" value="<?=$idpro?>">
-                    <input type="text" name="noidung">
-                    <input type="submit" name="guibinhluan" value="gửi">
+                    <input type="text" name="noidung" style="outline: none; boder:1px solid #ccc">
+                    <input type="submit" name="guibinhluan" value="Publish">
                 </form>
                 <?php
                 if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan'])){
