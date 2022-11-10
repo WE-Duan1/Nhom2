@@ -63,11 +63,10 @@
                 <div class="">
                     <h6 style="margin-top: 10px;">SKU</h6>
                     <p style="margin-left: 20px;"><?=$sanpham[0]['ten_loai'] ?></p>
-                    <!-- <h6 style="margin-top: 20px;">Category: shoes, nike</h6> -->
                 </div>
                 <div class="">
                     <h6 style="margin-top: 20px;">Category</h6>
-                    <p style="margin-left: 20px;">Shoes, Nike</p>
+                    <p style="margin-left: 20px;">Shoes Nike</p>
                 </div>
                 <script>
                    let amountElement = document.getElementById("amount");
@@ -99,22 +98,9 @@
                 </script>
             </div>
             <div class ="col-sm content-pr">
-                <!-- <div class="col-12 col-sm-6 col-md-4 bg-dark" >
-                    <p><i class="fa-solid fa-rotate"></i>&nbsp;</p><span style="word-wrap: break-word;"> 100% Genuine - Exchange in 1 month (for unused products)</span>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 bg-dark" >
-                    <p><i class="fa-solid fa-truck"></i>&nbsp;</p><span> Free delivery for orders from 500,000 VND in the first 10km</span>
-
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 bg-dark">
-                    <p><i class="fa-solid fa-share-from-square"  style="margin-top:30px;"></i>&nbsp;</p><span> Cash on delivery, online payment with many methods</span>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 bg-dark">
-                    <p><i class="fa-solid fa-headset"></i>&nbsp;</p><span> Call center: 1900,988.970 (7:30 - 22:00)</span>
-                </div> -->
                 <div class= "row" style="margin-left: 30px; margin-top: 80px;">
                     <div class ="col-md-5 col-sm-6 text-center" style="word-break: break-all;">
-                        <p><i class="fa-solid fa-rotate"></i>&nbsp;</p><span style="word-wrap: break-word;"> 100% Genuine - Exchange in 1 month (for unused products)</span>
+                        <p><i class="fa-solid fa-rotate"></i>&nbsp;</p><span style="word-wrap: break-word;"> 100% Genuine - Exchange in 1 month (for unused product)</span>
                     </div>
                     <div class ="col-md-5 col-sm-6 text-center" style="word-break: break-all;">
                         <p><i class="fa-solid fa-truck"></i>&nbsp;</p><span> Free delivery for orders from 500,000 VND in the first 10km</span>
@@ -122,7 +108,7 @@
                     <div class ="col-md-5 col-sm-6 text-center" style="word-break: break-all; margin-top: 20px;">
                         <p><i class="fa-solid fa-share-from-square"></i>&nbsp;</p><span> Cash on delivery, online payment with many methods</span>
                     </div>
-                    <div class ="col-md-5 col-sm-6 text-center" style="word-break: break-all; margin-top: 20px;"">
+                    <div class ="col-md-5 col-sm-6 text-center" style="word-break: break-all; margin-top: 20px;">
                         <p><i class="fa-solid fa-headset"></i>&nbsp;</p><span> Call center: 1900,988.970 (7:30 - 22:00)</span>
                     </div>
                 </div>
@@ -143,11 +129,14 @@
         </div>
     </div>  
     <style>
-        /* .content-pr{
-            display: grid;
-            grid-template-columns: auto auto;
-            column-gap: 20px;
-        } */
+        .btn-minus{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .btn-plus{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
         .content-1 p{
             text-align: center;
         }
