@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2022 at 06:27 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Generation Time: Nov 11, 2022 at 02:48 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -84,22 +84,23 @@ CREATE TABLE `hang_hoa` (
   `img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `mota` text COLLATE utf8_unicode_ci NOT NULL,
   `iddm` int(10) NOT NULL,
-  `luotxem` int(11) NOT NULL DEFAULT 0
+  `luotxem` int(11) NOT NULL DEFAULT 0,
+  `trang_thai` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `hang_hoa`
 --
 
-INSERT INTO `hang_hoa` (`id`, `name`, `price`, `img`, `mota`, `iddm`, `luotxem`) VALUES
-(101, 'Ralph Sampson', 100.00, 'puma-Ralph Sampson.jpg', 'fdf', 38, 0),
-(103, 'Vans Classic Slip On ', 57.00, 'vans-classic-slipon.jpg', 'Classic Slipon', 39, 0),
-(104, 'ADIDAS HYPERTURF', 167.00, 'adidas-HYPERTURF.jpg', 'HYPERTURF', 37, 0),
-(105, 'Puma RS-X', 130.00, 'puma-RS-X.jpg', 'PUMA x TMC RS-X Sneakers', 38, 0),
-(106, 'Jordan Series Mid', 99.00, 'Jordan Series Mid.jpg', 'Nike Jordan Series Mid', 36, 0),
-(112, 'VANS VN0A5', 83.00, 'vans VN0A5KRDBZW.jpg', 'Vans VN0A5KRDBZW thuộc dòng Authentic Collage Black/White mới nhất trong bộ sưu tập của thương hiệu Vans', 39, 0),
-(113, 'SuperStart', 99.00, 'superstart1.jpg', 'z', 37, 0),
-(114, 'LeBron 19', 124.00, 'LeBron 19.jpg', '', 36, 0);
+INSERT INTO `hang_hoa` (`id`, `name`, `price`, `img`, `mota`, `iddm`, `luotxem`, `trang_thai`) VALUES
+(101, 'Ralph Sampson', 100.00, 'puma-Ralph Sampson.jpg', 'fdf', 38, 0, 1),
+(103, 'Vans Classic Slip On ', 57.00, 'vans-classic-slipon.jpg', 'Classic Slipon', 39, 0, 1),
+(104, 'ADIDAS HYPERTURF', 167.00, 'adidas-HYPERTURF.jpg', 'HYPERTURF', 37, 0, 1),
+(105, 'Puma RS-X', 130.00, 'puma-RS-X.jpg', 'PUMA x TMC RS-X Sneakers', 38, 0, 1),
+(106, 'Jordan Series Mid', 99.00, 'Jordan Series Mid.jpg', 'Nike Jordan Series Mid', 36, 0, 1),
+(112, 'VANS VN0A5', 83.00, 'vans VN0A5KRDBZW.jpg', 'Vans VN0A5KRDBZW thuộc dòng Authentic Collage Black/White mới nhất trong bộ sưu tập của thương hiệu Vans', 39, 0, 1),
+(113, 'SuperStart', 99.00, 'superstart1.jpg', 'z', 37, 0, 1),
+(114, 'LeBron 19', 124.00, 'LeBron 19.jpg', '', 36, 0, 0);
 
 -- --------------------------------------------------------
 
