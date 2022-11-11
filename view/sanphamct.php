@@ -66,7 +66,7 @@
                 </div>
                 <div class="">
                     <h6 style="margin-top: 20px;">Category</h6>
-                    <p style="margin-left: 20px;">Shoes Nike</p>
+                    <p style="margin-left: 20px;">SHOES <?=$sanpham[0]['ten_loai'] ?></p>
                 </div>
                 <script>
                    let amountElement = document.getElementById("amount");
