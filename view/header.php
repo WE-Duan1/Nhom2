@@ -57,7 +57,7 @@
 								 aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="index.php?act=category">Shop Category</a></li>
-									<li class="nav-item"><a class="nav-link" href="index.php?act=single-product">Product Details</a></li>
+								<!--	<li class="nav-item"><a class="nav-link" href="index.php?act=single-product">Product Details</a></li>-->
 									<li class="nav-item"><a class="nav-link" href="index.php?act=checkout">Product Checkout</a></li>
 									<li class="nav-item"><a class="nav-link" href="index.php?act=cart">Shopping Cart</a></li>
 									<li class="nav-item"><a class="nav-link" href="index.php?act=confirmation">Confirmation</a></li>
@@ -77,7 +77,6 @@
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="index.php?act=login">Login</a></li>
 									<li class="nav-item"><a class="nav-link" href="index.php?act=signup">SignUp</a></li>
-									<li class="nav-item"><a class="nav-link" href="index.php?act=tracking">Tracking</a></li>
 									<li class="nav-item"><a class="nav-link" href="index.php?act=elements">Elements</a></li>
 								</ul>
 							</li>
