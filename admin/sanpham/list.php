@@ -73,7 +73,7 @@
                             <td>'.$id.'</td>
                             <td>'.$name.'</td>
                             <td class="text-center">'.$hinh.'</td>
-                            <td>'.$price.'</td>
+                            <td>'.$price_old.'</td>
                             <td>'.$mota.'</td>
                             <td>'.$luotxem.'</td>
                             <td class="text-center"><a href="'.$suasp.'"><input type="button" value="Edit" style="width:120px; margin:5px; border:none;" ></a> <a href="'.$xoasp.'"><input type="button" value="Delete" style="width:120px;margin:5px; border:none;"></a></td>

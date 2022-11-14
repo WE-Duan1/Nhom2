@@ -2,7 +2,7 @@
 
     function insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm){
         // $sql = "INSERT INTO hang_hoa (name,price,img,mo_ta,iddm) VALUES ('$tensp','$giasp','$hinh','$mota','$iddm')";
-        $sql = "INSERT INTO hang_hoa (name, price, img, mota, iddm)
+        $sql = "INSERT INTO hang_hoa (name, price_old, img, mota, iddm)
         VALUES ('$tensp', '$giasp', '$hinh', '$mota', '$iddm')";
         pdo_execute($sql);
     }
@@ -51,10 +51,10 @@
     function update_sanpham($id,$tensp,$giasp,$mota,$hinh){
         if($hinh!="")
             // $sql = "UPDATE hang_hoa SET iddm='".$iddm."', name='".$tensp."',price='".$giasp."',mota='".$mota."',img='".$hinh."' WHERE id=".$id;
-            $sql = "UPDATE hang_hoa SET name='".$tensp."',price='".$giasp."',mota='".$mota."',img='".$hinh."' WHERE id=".$id;
+            $sql = "UPDATE hang_hoa SET name='".$tensp."',price_old='".$giasp."',mota='".$mota."',img='".$hinh."' WHERE id=".$id;
         else
             // $sql = "UPDATE hang_hoa SET iddm='".$iddm."', name='".$tensp."',price='".$giasp."',mota='".$mota."' WHERE id=".$id;
-            $sql = "UPDATE hang_hoa SET name='".$tensp."',price='".$giasp."',mota='".$mota."' WHERE id=".$id;
+            $sql = "UPDATE hang_hoa SET name='".$tensp."',price_old='".$giasp."',mota='".$mota."' WHERE id=".$id;
         pdo_execute($sql);
     }
 

@@ -49,7 +49,7 @@
                     </div>
                     <div class="form-group">
                         <label for="pwd">Price</label>
-                        <input type="text" name="giasp" id="" class=" form-control" value="<?php echo $sanpham[0]['price']?>">
+                        <input type="text" name="giasp" id="" class=" form-control" value="<?php echo $sanpham[0]['price_old']?>">
                     </div>
                     <div class="form-group">
                         <label for="pwd">Image</label><br>
