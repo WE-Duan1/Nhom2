@@ -50,17 +50,10 @@
     function update_sanpham($id,$tensp,$giasp,$giaspnew,$mota,$hinh){
         if($hinh!="")
             // $sql = "UPDATE hang_hoa SET iddm='".$iddm."', name='".$tensp."',price='".$giasp."',mota='".$mota."',img='".$hinh."' WHERE id=".$id;
-<<<<<<< HEAD
             $sql = "UPDATE hang_hoa SET name='".$tensp."',price_old='".$giasp."',price_new='".$giaspnew."',mota='".$mota."',img='".$hinh."' WHERE id=".$id;
         else
             // $sql = "UPDATE hang_hoa SET iddm='".$iddm."', name='".$tensp."',price='".$giasp."',mota='".$mota."' WHERE id=".$id;
             $sql = "UPDATE hang_hoa SET name='".$tensp."',price_old='".$giasp."',price_new='".$giaspnew."',mota='".$mota."' WHERE id=".$id;
-=======
-            $sql = "UPDATE hang_hoa SET name='".$tensp."',price_old='".$giasp."',mota='".$mota."',img='".$hinh."' WHERE id=".$id;
-        else
-            // $sql = "UPDATE hang_hoa SET iddm='".$iddm."', name='".$tensp."',price='".$giasp."',mota='".$mota."' WHERE id=".$id;
-            $sql = "UPDATE hang_hoa SET name='".$tensp."',price_old='".$giasp."',mota='".$mota."' WHERE id=".$id;
->>>>>>> f3af017b4fe8da56873c77b8b23a8b7e95b467bd
         pdo_execute($sql);
     }
 

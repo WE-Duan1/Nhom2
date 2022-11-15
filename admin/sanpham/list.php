@@ -24,7 +24,7 @@
             <a href="index.php?act=addsp"><input type="submit" value="Thêm Mới" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
             
             <a href="index.php?act=addimg"><input type="submit" value="Thêm Hình" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
-            <!-- end demo -->
+
             <input type="submit" value="Cập nhật" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
         </div>
         <form action="index.php?act=listsp" method="post">
@@ -76,10 +76,7 @@
                             <td>'.$name.'</td>
                             <td class="text-center">'.$hinh.'</td>
                             <td>'.$price_old.'</td>
-<<<<<<< HEAD
                             <td>'.$price_new.'</td>
-=======
->>>>>>> f3af017b4fe8da56873c77b8b23a8b7e95b467bd
                             <td>'.$mota.'</td>
                             <td>'.$luotxem.'</td>
                             <td class="text-center">
