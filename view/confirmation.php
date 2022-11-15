@@ -3,10 +3,10 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Confirmation</h1>
+					<h1>Xác nhận</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Confirmation</a>
+						<a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.html">Xác nhận</a>
 					</nav>
 				</div>
 			</div>
@@ -17,57 +17,57 @@
 	<!--================Order Details Area =================-->
 	<section class="order_details section_gap">
 		<div class="container">
-			<h3 class="title_confirmation">Thank you. Your order has been received.</h3>
+			<h3 class="title_confirmation">Cảm ơn! Đơn hàng của bạn đang được xử lý.</h3>
 			<div class="row order_d_inner">
 				<div class="col-lg-4">
 					<div class="details_item">
-						<h4>Order Info</h4>
+						<h4>Thông tin đặt hàng</h4>
 						<ul class="list">
-							<li><a href="#"><span>Order number</span> : 60235</a></li>
-							<li><a href="#"><span>Date</span> : Los Angeles</a></li>
-							<li><a href="#"><span>Total</span> : USD 2210</a></li>
-							<li><a href="#"><span>Payment method</span> : Check payments</a></li>
+							<li><a href="#"><span>Số điện thoại</span> : 1900 9999</a></li>
+							<li><a href="#"><span>Ngày</span> : Q.12</a></li>
+							<li><a href="#"><span>Tổng</span> : USD 671</a></li>
+							<li><a href="#"><span>Phương thức</span> : Tiền mặt</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="details_item">
-						<h4>Billing Address</h4>
+						<h4>Hóa đơn</h4>
 						<ul class="list">
-							<li><a href="#"><span>Street</span> : 56/8</a></li>
-							<li><a href="#"><span>City</span> : Los Angeles</a></li>
-							<li><a href="#"><span>Country</span> : United States</a></li>
-							<li><a href="#"><span>Postcode </span> : 36952</a></li>
+							<li><a href="#"><span>Đường</span> : 56/8</a></li>
+							<li><a href="#"><span>Quận/Huyện</span> : Q.12</a></li>
+							<li><a href="#"><span>Tỉnh</span> : TP.Hồ Chí Minh</a></li>
+							<li><a href="#"><span>Zip Code </span> : 700000</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="details_item">
-						<h4>Shipping Address</h4>
+						<h4>Địa chỉ giao hàng</h4>
 						<ul class="list">
-							<li><a href="#"><span>Street</span> : 56/8</a></li>
-							<li><a href="#"><span>City</span> : Los Angeles</a></li>
-							<li><a href="#"><span>Country</span> : United States</a></li>
-							<li><a href="#"><span>Postcode </span> : 36952</a></li>
+							<li><a href="#"><span>Đường</span> : 56/8</a></li>
+							<li><a href="#"><span>Quận/Huyện</span> : Q.12</a></li>
+							<li><a href="#"><span>Tỉnh</span> : TP.Hồ Chí Minh</a></li>
+							<li><a href="#"><span>Zip Code </span> : 700000</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="order_details_table">
-				<h2>Order Details</h2>
+				<h2>Thông tin chi tiết</h2>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 							<tr>
-								<th scope="col">Product</th>
-								<th scope="col">Quantity</th>
-								<th scope="col">Total</th>
+								<th scope="col">Sản phẩm</th>
+								<th scope="col">Số lượng</th>
+								<th scope="col">Tổng</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>
-									<p>Pixelstore fresh Blackberry</p>
+									<p>Puma Bmw Mms Drift Cat</p>
 								</td>
 								<td>
 									<h5>x 02</h5>
@@ -78,7 +78,7 @@
 							</tr>
 							<tr>
 								<td>
-									<p>Pixelstore fresh Blackberry</p>
+									<p>Puma Bmw Mms Drift Cat</p>
 								</td>
 								<td>
 									<h5>x 02</h5>
@@ -89,7 +89,7 @@
 							</tr>
 							<tr>
 								<td>
-									<p>Pixelstore fresh Blackberry</p>
+									<p>Puma Bmw Mms Drift Cat</p>
 								</td>
 								<td>
 									<h5>x 02</h5>
@@ -100,7 +100,7 @@
 							</tr>
 							<tr>
 								<td>
-									<h4>Subtotal</h4>
+									<h4>Giảm giá</h4>
 								</td>
 								<td>
 									<h5></h5>
@@ -111,18 +111,18 @@
 							</tr>
 							<tr>
 								<td>
-									<h4>Shipping</h4>
+									<h4>Phí vận chuyển</h4>
 								</td>
 								<td>
 									<h5></h5>
 								</td>
 								<td>
-									<p>Flat rate: $50.00</p>
+									<p>Phí: $50.00</p>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<h4>Total</h4>
+									<h4>Tổng</h4>
 								</td>
 								<td>
 									<h5></h5>

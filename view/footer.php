@@ -16,7 +16,7 @@
 				<div class="col-lg-4  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>Bản tin</h6>
-						<p>Luôn cập nhật thông tin mới nhất</p>
+						<p>Đăng ký nhận tin tức qua email</p>
 						<div class="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -60,7 +60,7 @@
 				<div class="col-lg-2 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>Theo dõi chúng tôi</h6>
-						<p>Các mạng xã hội</p>
+						<p>Mạng xã hội</p>
 						<div class="footer-social d-flex align-items-center">
 							<a href="https://www.facebook.com/NTD.26122003" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
 							<a href="https://github.com/TanDuy03" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -84,7 +84,7 @@
 			</div>
 			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
 				<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | My website by <a href="https://www.facebook.com/NTD.26122003" target="_blank">Group 2</a>
+Bản quyền &copy; <script>document.write(new Date().getFullYear());</script> Đăng ký bản quyền | Website thuộc về <a href="https://www.facebook.com/NTD.26122003" target="_blank"> Nhóm 2 - WE17309</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
 			</div>

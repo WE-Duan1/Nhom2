@@ -112,8 +112,8 @@
 		</div>
 	</header>
 	<!-- End Header Area -->
-	<script>
+	<!-- <script>
 		document.addEventListener('contextmenu', function(e){
 			e.preventDefault();
 		});
-	</script>
+	</script> -->
