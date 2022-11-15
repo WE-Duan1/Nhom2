@@ -54,7 +54,7 @@
 								<div class="price">Giá:</div>
 								<span>$</span>
 								<div id="lower-value"></div>
-								<div class="to">to</div>
+								<div class="to"> - </div>
 								<span>$</span>
 								<div id="upper-value"></div>
 							</div>
@@ -67,9 +67,20 @@
 				<div class="filter-bar d-flex flex-wrap align-items-center">
 					<div class="sorting">
 						<select>
+							<!-- <option value="1">Phân loại</option>
 							<option value="1">Phân loại</option>
-							<option value="1">Phân loại</option>
-							<option value="1">Phân loại</option>
+							<option value="1">Phân loại</option> -->
+							<?php
+						
+							foreach ($dsdm as $dm) {
+								extract($dm);
+								$linkdm="index.php?act=sanpham&iddm=".$ma_loai;
+								echo'
+									<option value="">'.$ten_loai.'</option>
+								';
+							}
+						
+						?>
 						</select>
 					</div>
 					<div class="sorting mr-auto">

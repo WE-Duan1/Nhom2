@@ -97,7 +97,7 @@
                             </div>
                             <div class="col-md-9">
                                 <div class="blog_post">
-                                    <img src="'.$hinh.'" alt="" style="width:540px; height:270px;">
+                                    <img src="'.$hinh.'" alt="">
                                     <div class="blog_details">
                                         <a href="single-blog.html">
                                             <h2>'.$name.'</h2>
