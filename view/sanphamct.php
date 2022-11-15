@@ -39,7 +39,7 @@
             </div>
             <div class ="col-sm-3">
                 <h1 style="text-align:center;font-size:22px;"><?php echo $sanpham[0]['name']?></h1>
-                <p style="font-weight:bold; text-align:center; color:red;font-size:25px;">$ <?php echo $sanpham[0]['price']?></p>
+                <p style="font-weight:bold; text-align:center; color:red;font-size:25px;">$ <?php echo $sanpham[0]['price_old']?></p>
                 <div class="btn-size">
                     <h6>Choose Size</h6>
                     <button class="btn btn-outline-secondary" style="margin-left: 20px;">35</button>
