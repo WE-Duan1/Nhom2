@@ -76,7 +76,10 @@
                             <td>'.$name.'</td>
                             <td class="text-center">'.$hinh.'</td>
                             <td>'.$price_old.'</td>
+<<<<<<< HEAD
                             <td>'.$price_new.'</td>
+=======
+>>>>>>> f3af017b4fe8da56873c77b8b23a8b7e95b467bd
                             <td>'.$mota.'</td>
                             <td>'.$luotxem.'</td>
                             <td class="text-center">

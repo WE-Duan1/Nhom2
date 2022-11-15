@@ -52,17 +52,16 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Trang chủ</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.php?act=lisdm">Danh mục</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.php?act=listsp">Sản phẩm</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.php?act=addimg">Hình ảnh</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.php?act=dskh">Tài khoản</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.php?act=binhluan">Bình luận</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php?act=adddm">Category</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php?act=addsp">Product</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php?act=dskh">User</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php?act=binhluan">Comment</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php?act=addtt">Blog</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.php?act=thongke">Thống kê</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php?act=thongke">Statistical</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><a href="index.php?act=thoat" class="cart"><span>Thoát</span></a></li>
+							<li class="nav-item"><a href="index.php?act=thoat" class="cart"><span>Exit</span></a></li>
 							<li class="nav-item">
 								<button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
 							</li>

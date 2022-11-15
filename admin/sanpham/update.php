@@ -48,7 +48,11 @@
                         <input type="text" name="tensp" id="" class=" form-control" value="<?php echo $sanpham[0]['name']?>">
                     </div>
                     <div class="form-group">
+<<<<<<< HEAD
                         <label for="pwd">Giá</label>
+=======
+                        <label for="pwd">Price</label>
+>>>>>>> f3af017b4fe8da56873c77b8b23a8b7e95b467bd
                         <input type="text" name="giasp" id="" class=" form-control" value="<?php echo $sanpham[0]['price_old']?>">
                     </div>
                     <div class="form-group">

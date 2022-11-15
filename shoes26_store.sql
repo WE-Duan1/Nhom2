@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Nov 15, 2022 at 06:04 PM
+=======
+-- Generation Time: Nov 14, 2022 at 08:07 PM
+>>>>>>> f3af017b4fe8da56873c77b8b23a8b7e95b467bd
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -276,13 +280,21 @@ ALTER TABLE `don_hang`
 -- AUTO_INCREMENT for table `hang_hoa`
 --
 ALTER TABLE `hang_hoa`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
+>>>>>>> f3af017b4fe8da56873c77b8b23a8b7e95b467bd
 
 --
 -- AUTO_INCREMENT for table `hinh_anh`
 --
 ALTER TABLE `hinh_anh`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+>>>>>>> f3af017b4fe8da56873c77b8b23a8b7e95b467bd
 
 --
 -- AUTO_INCREMENT for table `loai`

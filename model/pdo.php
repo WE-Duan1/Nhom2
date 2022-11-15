@@ -31,6 +31,7 @@ function pdo_execute($sql){
     finally{
         unset($conn);
     }
+    exit();
 }
 /**
  * Thực thi câu lệnh sql truy vấn dữ liệu (SELECT)

@@ -55,7 +55,7 @@
                     <h6 style="margin-top: 20px;">Amount</h6> 
                     <div class="amount-form" style="margin-left: 20px;">
                         <button class="btn-minus" id="minus" onclick="handleMinus()"><i class="fa-solid fa-minus"></i></button>
-                        <input type="number" value="1" id="amount">
+                        <input type="text" value="1" id="amount">
                         <button class="btn-plus" id="plus" onclick="handlePlus()"><i class="fa-solid fa-plus"></i></button>
                         <input type="submit" value="<?=$sanpham[0]['trang_thai']? "Add To Cart":"Out Of Stock"?>" <?=$sanpham[0]['trang_thai']? "":"disabled"?> class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
                     </div>
