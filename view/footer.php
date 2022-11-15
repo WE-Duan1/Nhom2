@@ -4,19 +4,19 @@
 			<div class="row">
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>About Us</h6>
+						<h6>Về chúng tôi</h6>
 						<p>
 							<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
 							magna aliqua. -->
-                            Student majoring in website development <br>
-                            Active - Creation - Self learning
+                            Sinh viên chuyên ngành phát triển website <br>
+                            Chủ động - Sáng tạo - Tự học
 						</p>
 					</div>
 				</div>
 				<div class="col-lg-4  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Newsletter</h6>
-						<p>Stay update with our latest</p>
+						<h6>Bản tin</h6>
+						<p>Luôn cập nhật thông tin mới nhất</p>
 						<div class="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -24,7 +24,7 @@
 
 								<div class="d-flex flex-row">
 
-									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+									<input class="form-control" name="EMAIL" placeholder="Nhập Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
 									 required="" type="email">
 
 
@@ -59,8 +59,8 @@
 				</div>
 				<div class="col-lg-2 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Follow Us</h6>
-						<p>Let us be social</p>
+						<h6>Theo dõi chúng tôi</h6>
+						<p>Các mạng xã hội</p>
 						<div class="footer-social d-flex align-items-center">
 							<a href="https://www.facebook.com/NTD.26122003" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
 							<a href="https://github.com/TanDuy03" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -72,11 +72,11 @@
 				</div>
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Contact Us</h6>
+						<h6>Liên hệ chúng tôi</h6>
 						<p>
 							<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
 							magna aliqua. -->
-                            12 District, Ho Chi Minh City <br>
+                            Quận 12, TP Hồ Chí Minh <br>
                             028 3979 999 
 						</p>
 					</div>
