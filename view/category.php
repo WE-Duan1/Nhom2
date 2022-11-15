@@ -101,7 +101,7 @@
 							$hinh=$img_path.$img;
 							$sphct="index.php?act=sanphamct&idsp=".$id;
 							echo '
-							<div class="col-lg-3 col-md-6">
+							<div class="col-lg-4 col-md-6">
 								<div class="single-product">
 									<a href="'.$sphct.'">
 										<img class="img-fluid" src="'.$hinh.'" alt="" style="height:250px; width:250px;">
@@ -109,7 +109,7 @@
 									<div class="product-details">
 										<h6>'.$name.'</h6>
 										<div class="price">
-											<h6>$'.$price.'</h6>
+											<h6>$'.$price_old.'</h6>
 											<h6 class="l-through">$210.00</h6>
 										</div>
 										<div class="prd-bottom">
