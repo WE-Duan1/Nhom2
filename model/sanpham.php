@@ -1,15 +1,8 @@
 <?php
 
-<<<<<<< HEAD
     function insert_sanpham($tensp,$giasp,$giaspnew,$hinh,$mota,$iddm){
         $sql = "INSERT INTO hang_hoa (name, price_old, price_new, img, mota, iddm)
         VALUES ('$tensp', '$giasp', '$giaspnew', '$hinh', '$mota', '$iddm')";
-=======
-    function insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm){
-        // $sql = "INSERT INTO hang_hoa (name,price,img,mo_ta,iddm) VALUES ('$tensp','$giasp','$hinh','$mota','$iddm')";
-        $sql = "INSERT INTO hang_hoa (name, price_old, img, mota, iddm)
-        VALUES ('$tensp', '$giasp', '$hinh', '$mota', '$iddm')";
->>>>>>> f3af017b4fe8da56873c77b8b23a8b7e95b467bd
         pdo_execute($sql);
     }
     function delete_sanpham($id){
