@@ -8,11 +8,11 @@
 						<div class="row single-slide align-items-center d-flex">
 							<div class="col-lg-5 col-md-6">
 								<div class="banner-content">
-									<h1>Nike New <br>Collection!</h1>
-									<p>This month, Nike launched a new product collection. Specialized for RUNNING, quickly receive offers for new products.</p>
+									<h1>Nike Bộ <br>Sưu Tập Mới!</h1>
+									<p>Trong tháng này, Nike tung ra bộ sưu tập sản phẩm mới. Các bạn nên nhanh tay nhận ưu đãi cho sản phẩm mới.</p>
 									<div class="add-bag d-flex align-items-center">
 										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-										<span class="add-text text-uppercase">Add to Bag</span>
+										<span class="add-text text-uppercase">Thêm vào giỏ hàng</span>
 									</div>
 								</div>
 							</div>
@@ -40,7 +40,7 @@
 									<img class="img-fluid" src="img/banner/banner-img.png" alt="">
 								</div>
 							</div>
-						</div>
+						</div> 
 					</div>
 				</div>
 			</div>
@@ -58,8 +58,8 @@
 						<div class="f-icon">
 							<img src="img/features/f-icon1.png" alt="">
 						</div>
-						<h6>Free Delivery</h6>
-						<p>Free Shipping on all order</p>
+						<h6>Miễn phí giao hàng</h6>
+						<p>Miễn phí giao tất cả đơn hàng</p>
 					</div>
 				</div>
 				<!-- single features -->
@@ -68,8 +68,8 @@
 						<div class="f-icon">
 							<img src="img/features/f-icon2.png" alt="">
 						</div>
-						<h6>Return Policy</h6>
-						<p>Free Shipping on all order</p>
+						<h6>Chính sách đổi trả</h6>
+						<p>Chính sách ưu đãi tốt nhất</p>
 					</div>
 				</div>
 				<!-- single features -->
@@ -78,8 +78,8 @@
 						<div class="f-icon">
 							<img src="img/features/f-icon3.png" alt="">
 						</div>
-						<h6>24/7 Support</h6>
-						<p>Free Shipping on all order</p>
+						<h6>Hỗ trợ 24/7</h6>
+						<p>Hỗ trợ khách hàng 24/7</p>
 					</div>
 				</div>
 				<!-- single features -->
@@ -88,8 +88,8 @@
 						<div class="f-icon">
 							<img src="img/features/f-icon4.png" alt="">
 						</div>
-						<h6>Secure Payment</h6>
-						<p>Free Shipping on all order</p>
+						<h6>Thanh toán an toàn</h6>
+						<p>Thanh toán tiện lợi</p>
 					</div>
 				</div>
 			</div>
@@ -173,8 +173,8 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-6 text-center">
 						<div class="section-title">
-							<h1>Product New</h1>
-							<p style="padding:30px 50px;">Z-MOHN updates many new products from brands Vans, Converse, Adidas, Nike,... Diverse functions and models. We look forward to bringing you something new</p>
+							<h1>Sản phẩm mới</h1>
+							<p style="padding:30px 50px;">Z-MOHN cập nhật nhiều sản phẩm mới từ các thương hiệu Vans, Converse, Adidas, Nike,... Đa dạng chức năng, mẫu mã. Chúng tôi mong muốn mang lại cho bạn những sản phẩm mới nhất.</p>
 						</div>
 					</div>
 				</div>
@@ -916,8 +916,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
 					<div class="section-title">
-						<h1>Deals of the Week</h1>
-						<p>The most popular products of the past week. Top favorite products, many views. Suggest you conveniently refer to recommendations from other customers</p>
+						<h1>Sản phẩm yêu thích nhất</h1>
+						<p>Các sản phẩm phổ biến nhất trong tuần qua. Top sản phẩm được yêu thích, nhiều lượt xem. Đề xuất bạn thuận tiện tham khảo các khuyến nghị từ các khách hàng khác</p>
 					</div>
 				</div>
 			</div>
