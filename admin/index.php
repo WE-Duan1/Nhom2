@@ -10,6 +10,7 @@
         include "../model/thongke.php";
         include "../model/tintuc.php";
         include "../model/binhluan.php";
+        include "../model/hinhanh.php";
         include "header.php";
         if (isset($_GET['act'])) {
             # code...
@@ -80,7 +81,6 @@
                         pdo_execute($sql);
                         $thongbao ="Thêm thành công";
                     }
-                    
                     include "danhmuc/add.php";
                     break;
                 case 'lisdm':
@@ -215,6 +215,7 @@
                         $iddm = $_POST['iddm'];
                         $tensp = $_POST['tensp'];
                         $giasp = $_POST['giasp'];
+                        $giaspnew = $_POST['giaspnew'];
                         $mota = $_POST['mota'];
                         $hinh = $_FILES['hinh']['name'];
                         $target_dir = "../upload/";
@@ -224,7 +225,7 @@
                         } else {
                             // echo "Sorry, there was an error uploading your file.";
                         }
-                        insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm);
+                        insert_sanpham($tensp,$giasp,$giaspnew,$hinh,$mota,$iddm);
                         $thongbao = "Thêm mới thành công";
                     }
                     $sql = "select * from loai order by ten_loai desc";
@@ -276,7 +277,7 @@
                         } else {
                             // echo "Sorry, there was an error uploading your file.";
                         }
-                        update_sanpham($id,$tensp,$giasp,$mota,$hinh); 
+                        update_sanpham($id,$tensp,$giasp,$giaspnew,$mota,$hinh); 
                         // update_sanpham($id,$tensp,$giasp,$mota,$hinh,$iddm);
                         $thongbao="Cập nhập thành công";
                     }
@@ -285,6 +286,39 @@
                     $listsanpham= loadall_sanpham("", 0);
                     include "sanpham/list.php";
                     break;
+
+                case 'addimg':
+                    if (isset($_POST['themmoi'])&&($_POST['themmoi'])) {
+                        $ma_hh = $_POST['ma_hh'];
+                        $totalfiles = count($_FILES['hinh']['name']);
+                        for ($i=0; $i<$totalfiles; $i++) {
+                            $img = $_FILES['hinh']['name'][$i];
+
+                            if (move_uploaded_file($_FILES["hinh"]["tmp_name"][$i], '../upload/' .$img)) {
+                                insert_img($ma_hh, $img);
+                            } else {
+                                echo 'Error in uploading file - '.$_FILES['hinh']['name'][$i].'<br/>';
+                            }
+                        }
+                        $thongbao = "Thêm mới thành công";
+                    }
+                    include "hinhanh/add.php";
+                    break;
+                case 'listimg':
+                    if(isset($_GET['id'])&&($_GET['id']>0)){
+                        $sanpham = loadone_sanpham($_GET['id']);
+                    }
+                    $listimg = loadall_img($_GET['id']);
+                    include "hinhanh/list.php";
+                    break;
+                case 'xoaimg':
+                    if (isset($_GET['id'])&&($_GET['id']>0)) {
+                        delete_img($_GET['id']);
+                    }
+                    $listimg = loadall_img($_GET['id']);
+                    include "hinhanh/list.php";
+                    break;
+
                 // -----------------------------------------------------
                 default:
                     # code...

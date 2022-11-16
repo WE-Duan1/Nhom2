@@ -1,9 +1,8 @@
 <?php
 
-    function insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm){
-        // $sql = "INSERT INTO hang_hoa (name,price,img,mo_ta,iddm) VALUES ('$tensp','$giasp','$hinh','$mota','$iddm')";
-        $sql = "INSERT INTO hang_hoa (name, price, img, mota, iddm)
-        VALUES ('$tensp', '$giasp', '$hinh', '$mota', '$iddm')";
+    function insert_sanpham($tensp,$giasp,$giaspnew,$hinh,$mota,$iddm){
+        $sql = "INSERT INTO hang_hoa (name, price_old, price_new, img, mota, iddm)
+        VALUES ('$tensp', '$giasp', '$giaspnew', '$hinh', '$mota', '$iddm')";
         pdo_execute($sql);
     }
     function delete_sanpham($id){
@@ -48,13 +47,13 @@
     //     return $sanpham;
     // }
     // function update_sanpham($id,$tensp,$giasp,$mota,$hinh,$iddm){
-    function update_sanpham($id,$tensp,$giasp,$mota,$hinh){
+    function update_sanpham($id,$tensp,$giasp,$giaspnew,$mota,$hinh){
         if($hinh!="")
             // $sql = "UPDATE hang_hoa SET iddm='".$iddm."', name='".$tensp."',price='".$giasp."',mota='".$mota."',img='".$hinh."' WHERE id=".$id;
-            $sql = "UPDATE hang_hoa SET name='".$tensp."',price='".$giasp."',mota='".$mota."',img='".$hinh."' WHERE id=".$id;
+            $sql = "UPDATE hang_hoa SET name='".$tensp."',price_old='".$giasp."',price_new='".$giaspnew."',mota='".$mota."',img='".$hinh."' WHERE id=".$id;
         else
             // $sql = "UPDATE hang_hoa SET iddm='".$iddm."', name='".$tensp."',price='".$giasp."',mota='".$mota."' WHERE id=".$id;
-            $sql = "UPDATE hang_hoa SET name='".$tensp."',price='".$giasp."',mota='".$mota."' WHERE id=".$id;
+            $sql = "UPDATE hang_hoa SET name='".$tensp."',price_old='".$giasp."',price_new='".$giaspnew."',mota='".$mota."' WHERE id=".$id;
         pdo_execute($sql);
     }
 
