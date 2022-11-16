@@ -268,6 +268,7 @@
                         // $iddm = $_POST['iddm']; //
                         $tensp = $_POST['tensp'];
                         $giasp = $_POST['giasp'];
+                        $giaspnew = $_POST['giaspnew'];
                         $mota = $_POST['mota'];
                         $hinh = $_FILES['hinh']['name'];
                         $target_dir = "../upload/";

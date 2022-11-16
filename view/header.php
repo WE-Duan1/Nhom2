@@ -51,16 +51,16 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Trang chủ</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Shop</a>
+								 aria-expanded="false">Cửa hàng</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="index.php?act=category">Shop Category</a></li>
+									<li class="nav-item"><a class="nav-link" href="index.php?act=category">Sản phẩm</a></li>
 								<!--	<li class="nav-item"><a class="nav-link" href="index.php?act=single-product">Product Details</a></li>-->
-									<li class="nav-item"><a class="nav-link" href="index.php?act=checkout">Product Checkout</a></li>
-									<li class="nav-item"><a class="nav-link" href="index.php?act=cart">Shopping Cart</a></li>
-									<li class="nav-item"><a class="nav-link" href="index.php?act=confirmation">Confirmation</a></li>
+									<li class="nav-item"><a class="nav-link" href="index.php?act=checkout">Thanh toán sản phẩm</a></li>
+									<li class="nav-item"><a class="nav-link" href="index.php?act=cart">Giỏ hàng</a></li>
+									<li class="nav-item"><a class="nav-link" href="index.php?act=confirmation">Xác nhận</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -73,14 +73,14 @@
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
+								 aria-expanded="false">Thành viên</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="index.php?act=login">Login</a></li>
-									<li class="nav-item"><a class="nav-link" href="index.php?act=signup">SignUp</a></li>
+									<li class="nav-item"><a class="nav-link" href="index.php?act=login">Đăng nhập</a></li>
+									<li class="nav-item"><a class="nav-link" href="index.php?act=signup">Đăng ký</a></li>
 									<li class="nav-item"><a class="nav-link" href="index.php?act=elements">Elements</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="index.php?act=contact">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php?act=contact">Liên hệ</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 						<?php
@@ -112,3 +112,8 @@
 		</div>
 	</header>
 	<!-- End Header Area -->
+	<!-- <script>
+		document.addEventListener('contextmenu', function(e){
+			e.preventDefault();
+		});
+	</script> -->

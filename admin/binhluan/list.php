@@ -5,8 +5,8 @@
 				<div class="col-first">
 					<h1>Admin</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Comments</a>
+						<a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.html">Bình Luận</a>
 					</nav>
 				</div>
 			</div>
@@ -15,21 +15,21 @@
 	<!-- End banner Area -->
 <div class="container-fluid">
     <div class="row-title text-center" style="margin-top:20px;">
-        <h3>Customer Comments</h3>
+        <h3>Bình Luận</h3>
     </div>
     <div class="table-responsive-sm">
         <div class="d-flex ">
-            <input type="submit" value="Select All" name="" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-            <a href="index.php?act=addtk"><input type="submit" value="Add New" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
-            <input type="submit" value="Edit" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+            <input type="submit" value="Chọn Tất Cả" name="" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+            <a href="index.php?act=addtk"><input type="submit" value="Thêm Mới" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+            <input type="submit" value="Sửa" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
         </div>
         <table class="table table-bordered">
             <thead class="thead-light">
                 <tr>
                     <th></th>
-                    <th>Content</th>
-                    <th>Date Submitted</th>
-                    <th style="width:200px;">Set Up</th>
+                    <th>Nội Dung</th>
+                    <th>Ngày Bình Luận</th>
+                    <th style="width:200px;">Thao Tác</th>
                 </tr>
             </thead>
             <?php
