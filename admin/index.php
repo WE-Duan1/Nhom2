@@ -288,37 +288,37 @@
                     include "sanpham/list.php";
                     break;
 
-                case 'addimg':
-                    if (isset($_POST['themmoi'])&&($_POST['themmoi'])) {
-                        $ma_hh = $_POST['ma_hh'];
-                        $totalfiles = count($_FILES['hinh']['name']);
-                        for ($i=0; $i<$totalfiles; $i++) {
-                            $img = $_FILES['hinh']['name'][$i];
-
-                            if (move_uploaded_file($_FILES["hinh"]["tmp_name"][$i], '../upload/' .$img)) {
-                                insert_img($ma_hh, $img);
-                            } else {
-                                echo 'Error in uploading file - '.$_FILES['hinh']['name'][$i].'<br/>';
+                    case 'addimg':
+                        if (isset($_POST['themmoi'])&&($_POST['themmoi'])) {
+                            $ma_hh = $_POST['ma_hh'];
+                            $totalfiles = count($_FILES['hinh']['name']);
+                            for ($i=0; $i<$totalfiles; $i++) {
+                                $img = $_FILES['hinh']['name'][$i];
+    
+                                if (move_uploaded_file($_FILES["hinh"]["tmp_name"][$i], '../upload/' .$img)) {
+                                    insert_img($ma_hh, $img);
+                                } else {
+                                    echo 'Error in uploading file - '.$_FILES['hinh']['name'][$i].'<br/>';
+                                }
                             }
+                            $thongbao = "Thêm mới thành công";
                         }
-                        $thongbao = "Thêm mới thành công";
-                    }
-                    include "hinhanh/add.php";
-                    break;
-                case 'listimg':
-                    if(isset($_GET['id'])&&($_GET['id']>0)){
-                        $sanpham = loadone_sanpham($_GET['id']);
-                    }
-                    $listimg = loadall_img($_GET['id']);
-                    include "hinhanh/list.php";
-                    break;
-                case 'xoaimg':
-                    if (isset($_GET['id'])&&($_GET['id']>0)) {
-                        delete_img($_GET['id']);
-                    }
-                    $listimg = loadall_img($_GET['id']);
-                    include "hinhanh/list.php";
-                    break;
+                        include "hinhanh/add.php";
+                        break;
+                    case 'listimg':
+                        if(isset($_GET['id'])&&($_GET['id']>0)){
+                            $sanpham = loadone_sanpham($_GET['id']);
+                        }
+                        $listimg = loadall_img($_GET['id']);
+                        include "hinhanh/list.php";
+                        break;
+                    case 'xoaimg':
+                        if (isset($_GET['id'])&&($_GET['id']>0)) {
+                            delete_img($_GET['id']);
+                        }
+                        $listimg = loadall_img($_GET['id']);
+                        include "hinhanh/list.php";
+                        break;
 
                 // -----------------------------------------------------
                 default:
