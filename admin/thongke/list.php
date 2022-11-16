@@ -5,8 +5,8 @@
 				<div class="col-first">
 					<h1>Admin</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Statistical</a>
+						<a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.html">Thống kê</a>
 					</nav>
 				</div>
 			</div>
@@ -15,7 +15,7 @@
 	<!-- End banner Area -->
 <div class="container-fluid">
     <div class="row-title text-center" style="margin-top:20px;">
-        <h3>Statistical</h3>
+        <h3>Thống kê</h3>
     </div>
     <div class="table-responsive-sm">
         <!-- <div class="d-flex ">
@@ -26,12 +26,12 @@
         <table class="table table-bordered">
             <thead class="thead-light">
                 <tr>
-                    <th>Code</th>
-                    <th>Name Category</th>
-                    <th>Amount</th>
-                    <th>Highest Price</th>
-                    <th>Lowest Price</th>
-                    <th>Avarage Price</th>
+                    <th>Mã danh mục</th>
+                    <th>Tên danh mục</th>
+                    <th>Số lượng sản phẩm có trong danh mục</th>
+                    <th>Giá cao nhất</th>
+                    <th>Giá thấp nhất</th>
+                    <th>Giá trung bình</th>
                 </tr>
             </thead>
             <?php

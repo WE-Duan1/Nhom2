@@ -5,8 +5,8 @@
 				<div class="col-first">
 					<h1>Admin</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Add New Blog</a>
+						<a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.html">Thêm Tin Mới</a>
 					</nav>
 				</div>
 			</div>
@@ -15,30 +15,30 @@
 	<!-- End banner Area -->
         <div class="row-form">
             <div class="row-title text-center" style="margin-top:20px;">
-                <h3>Add New Blog</h3>
+                <h3>Thêm Tin Mới</h3>
             </div>
             <div class="container">
                 <form action="index.php?act=addtt" method="post" enctype="multipart/form-data"> 
                     <div class="form-group">
-                        <label for="pwd">Name</label>
+                        <label for="pwd">Tiêu Đề</label>
                         <input type="text" name="name" id="" class=" form-control">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Image</label> <br>
+                        <label for="pwd">Hình Ảnh</label> <br>
                         <input type="file" name="hinh" id="" class="">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Describe</label>
+                        <label for="pwd">Nội Dung</label>
                         <textarea name="mota" id="" cols="30" rows="5" class=" form-control"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Date</label>
+                        <label for="pwd">Ngày Đăng</label>
                         <input type="date" name="ngaydang" id="" class=" form-control" disabled>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <input type="submit" value="Add New" name="themmoi" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-                        <input type="reset" value="Reset" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-                        <a href="index.php?act=listtt"><input type="button" value="List" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+                        <input type="submit" value="Thêm Mới" name="themmoi" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+                        <input type="reset" value="Nhập Lại" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+                        <a href="index.php?act=listtt"><input type="button" value="Danh Sách" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
                     </div>
                     <?php
                         // echo $ngaydang;

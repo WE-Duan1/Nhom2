@@ -5,8 +5,8 @@
 				<div class="col-first">
 					<h1>Admin</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Product Type</a>
+						<a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.html">Cập Nhật Tin Tức</a>
 					</nav>
 				</div>
 			</div>
@@ -15,7 +15,7 @@
 	<!-- End banner Area -->
         <div class="row-form">
             <div class="row-title text-center" style="margin-top:20px;">
-                <h3>Update Blog</h3>
+                <h3>Cập Nhật Tin Tức</h3>
             </div>
             <div class="container">
                 <?php 
@@ -26,16 +26,16 @@
                 ?>
                 <form action="index.php?act=updatett" method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="pwd">Name</label>
+                        <label for="pwd">Tiêu Đề</label>
                         <input type="text" name="name" id="" class=" form-control" value="<?php echo $tintuc[0]['name']?>">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Image</label><br>
+                        <label for="pwd">Hình Ảnh</label><br>
                         <input type="file" name="hinh" id="" class="" value="">
                         <?php echo $tintuc[0]['img']?>
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Describe</label>
+                        <label for="pwd">Nội Dung</label>
                         <textarea name="mota" id="" cols="30" rows="10" class=" form-control" value=""><?php echo $tintuc[0]['mota']?></textarea>
                     </div>
                     <!-- <div class="form-group">
@@ -44,9 +44,9 @@
                     </div> -->
                     <div class="d-flex justify-content-center">
                         <input type="hidden" name="id" value="<?php echo $tintuc[0]['id']?>">
-                        <input type="submit" value="Update" name="capnhap" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
-                        <a href="index.php?act=addtt"><input type="button" value="Add new" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
-                        <a href="index.php?act=listtt"><input type="button" value="List" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+                        <input type="submit" value="Cập Nhật" name="capnhap" class="form-control " style=" width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
+                        <a href="index.php?act=addtt"><input type="button" value="Thêm Mới" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
+                        <a href="index.php?act=listtt"><input type="button" value="Danh Sách" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
                     </div>
                     <!-- <input type="submit" value="Thêm mới" name="themmoi" class="btn btn-default border-0 " style="margin-bottom:15px; width:120px;background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
                     <input type="reset" value="Nhập lại" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">

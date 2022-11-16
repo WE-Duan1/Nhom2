@@ -103,7 +103,7 @@
                
                 <form action="<?=$_SERVER['PHP_SELF'];?>" method="post">
                     <input type="hidden" name="idpro" value="<?=$idpro?>">
-                    <input type="text" name="noidung" style="outline: none; boder:1px solid #ccc">
+                    <input type="text" name="noidung" style="outline: none; border:1px solid #ccc">
                     <input type="submit" name="guibinhluan" value="Publish">
                 </form>
                 <?php
