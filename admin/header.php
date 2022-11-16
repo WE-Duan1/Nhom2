@@ -55,6 +55,7 @@
 							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php?act=adddm">Category</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php?act=addsp">Product</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php?act=addimg">Images</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php?act=dskh">User</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php?act=binhluan">Comment</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php?act=addtt">Blog</a></li>

@@ -24,19 +24,10 @@
             <a href="index.php?act=addsp"><input type="submit" value="Add New" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
             
             <a href="index.php?act=addimg"><input type="submit" value="Add New Image" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;"></a>
-            <!-- end demo -->
+
             <input type="submit" value="Edit" class="btn btn-default border-0" style="margin:0 0 15px 15px; width:120px; background: linear-gradient(131deg, rgba(255,117,0,1) 12%, rgba(255,184,0,1) 86%); color:#fff;">
         </div>
         <form action="index.php?act=listsp" method="post">
-            <select name="iddm" id="" class="form-select form-select-lg mb-3" aria-label=".form-select-sm example">
-                <option selected value="0">Select Category</option>
-                <?php 
-                    foreach ($listdanhmuc as $danhmuc) {
-                        extract($danhmuc);
-                        echo'<option value="'.$ma_loai.'" >'.$ten_loai.'</option>';
-                    }
-                ?>
-            </select>
             <div class="form-group">
                 <input type="text" name="kyw" class="" placeholder="Search..." style="border: 1px solid gray;border-radius:5px;outline:none;padding-left:5px;">
                 <input type="submit" name="listgo" value="Go" style="border:1px solid gray;border-radius:5px;">
@@ -46,24 +37,17 @@
             <thead class="thead-light">
                 <tr>
                     <th></th>
-                    <th>Code</th>
-                    <th>Name Product</th>
-                    <th>Image</th>
-                    <th>Price</th>
-                    <th>Describe</th>
-                    <th>View</th>
-                    <th>Set Up</th>
+                    <th class="text-center">Image</th>
+                    <th class="text-center">Set Up</th>
                 </tr>
             </thead>
             <?php
-                foreach ($listsanpham as $sanpham) {
-                    extract($sanpham);
-                    $xoasp="index.php?act=xoasp&id=".$id;
-                    $suasp="index.php?act=suasp&id=".$id;
-                    $imgsp="index.php?act=listimg&id=".$id;
+                foreach ($listimg as $hinhanh) {
+                    extract($hinhanh);
+                    $xoaimg="index.php?act=xoaimg&id=".$id;
                     $ha="../upload/".$img;
                     if (is_file($ha)) {
-                       $hinh="<img src='".$ha."' height='150' width='45%'>";
+                       $hinh="<img src='".$ha."' width='10%'>";
                     }else{
                         $hinh="Không tìm thấy hình";
                     }
@@ -71,16 +55,9 @@
                     <tbody>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>'.$id.'</td>
-                            <td>'.$name.'</td>
                             <td class="text-center">'.$hinh.'</td>
-                            <td>'.$price_old.'</td>
-                            <td>'.$mota.'</td>
-                            <td>'.$luotxem.'</td>
                             <td class="text-center">
-                                <a href="'.$suasp.'"><input type="button" value="Edit" style="width:120px; margin:5px; border:none;" ></a>
-                                <a href="'.$xoasp.'"><input type="button" value="Delete" style="width:120px;margin:5px; border:none;"></a>
-                                <a href="'.$imgsp.'"><input type="button" value="Image" style="width:120px;margin:5px; border:none;"></a>
+                                <a href="'.$xoaimg.'"><input type="button" value="Delete" style="width:120px;margin:5px; border:none;"></a>
                             </td>
                         </tr>
                     </tbody>';
